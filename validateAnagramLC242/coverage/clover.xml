@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1688132180934" clover="3.2.0">
+  <project timestamp="1688132180934" name="All files">
+    <metrics statements="19" coveredstatements="19" conditionals="11" coveredconditionals="11" methods="1" coveredmethods="1" elements="31" coveredelements="31" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
+    <file name="validateAnagramLC242.js" path="C:\Users\alexa\Desktop\validateAnagramLC242\validateAnagramLC242.js">
+      <metrics statements="19" coveredstatements="19" conditionals="11" coveredconditionals="11" methods="1" coveredmethods="1"/>
+      <line num="3" count="6" type="stmt"/>
+      <line num="4" count="6" type="stmt"/>
+      <line num="6" count="6" type="cond" truecount="5" falsecount="0"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="12" count="4" type="stmt"/>
+      <line num="13" count="18" type="stmt"/>
+      <line num="14" count="18" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="16" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="21" count="4" type="stmt"/>
+      <line num="22" count="13" type="stmt"/>
+      <line num="23" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="11" type="stmt"/>
+      <line num="26" count="2" type="stmt"/>
+      <line num="30" count="2" type="stmt"/>
+      <line num="31" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
