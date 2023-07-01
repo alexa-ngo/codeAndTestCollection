@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1688219801509" clover="3.2.0">
+  <project timestamp="1688219801509" name="All files">
+    <metrics statements="9" coveredstatements="9" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1" elements="18" coveredelements="18" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
+    <file name="validatePerfectSquareLC367.js" path="C:\Users\alexa\Desktop\codeAndcollection\codeAndTestCollection\validatePerfectSquareLC367\validatePerfectSquareLC367.js">
+      <metrics statements="9" coveredstatements="9" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+      <line num="2" count="13" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="6" count="11" type="stmt"/>
+      <line num="8" count="11" type="stmt"/>
+      <line num="9" count="205047" type="stmt"/>
+      <line num="10" count="205047" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="4" type="stmt"/>
+      <line num="14" count="205043" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="7" type="stmt"/>
+    </file>
+  </project>
+</coverage>
