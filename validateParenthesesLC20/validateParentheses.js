@@ -23,3 +23,4 @@ export function validateParentheses(s) {
   }
   return stack.length === 0;
 }
+
