@@ -15,4 +15,5 @@ export function validatePerfectSquare(num) {
             return false;
         }
     }
+    return false;
 };
