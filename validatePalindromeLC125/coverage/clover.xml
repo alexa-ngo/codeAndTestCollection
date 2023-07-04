@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1688505662031" clover="3.2.0">
+  <project timestamp="1688505662032" name="All files">
+    <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1" elements="25" coveredelements="25" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
+    <file name="validatePalindromeLC125.js" path="C:\Users\alexa\Desktop\codeAndcollection\codeAndTestCollection\validatePalindromeLC125\validatePalindromeLC125.js">
+      <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+      <line num="2" count="9" type="stmt"/>
+      <line num="4" count="9" type="stmt"/>
+      <line num="8" count="9" type="stmt"/>
+      <line num="9" count="9" type="stmt"/>
+      <line num="11" count="9" type="stmt"/>
+      <line num="12" count="31" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="12" type="stmt"/>
+      <line num="16" count="31" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="16" type="stmt"/>
+      <line num="20" count="31" type="cond" truecount="2" falsecount="0"/>
+      <line num="21" count="4" type="stmt"/>
+      <line num="24" count="27" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="27" count="25" type="stmt"/>
+      <line num="28" count="25" type="stmt"/>
+      <line num="30" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>
