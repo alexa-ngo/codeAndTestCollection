@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1688660070891" clover="3.2.0">
-  <project timestamp="1688660070892" name="All files">
+<coverage generated="1688660148998" clover="3.2.0">
+  <project timestamp="1688660148998" name="All files">
     <metrics statements="13" coveredstatements="13" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2" elements="25" coveredelements="25" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
     <file name="firstBadVersionLC278.js" path="C:\Users\alexa\Desktop\codeAndcollection\codeAndTestCollection\firstBadVersionLC278\firstBadVersionLC278.js">
       <metrics statements="13" coveredstatements="13" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
