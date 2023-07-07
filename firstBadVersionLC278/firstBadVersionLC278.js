@@ -15,10 +15,3 @@ export function firstBadVersion(n) {
     return end;
 };
 
-export function isBadVersion(input) {
-    if ((input === 3) || (input === 1) || (input === 27) || (input === 148)) {
-        return true;
-    } else {
-        return false;
-    }
-};

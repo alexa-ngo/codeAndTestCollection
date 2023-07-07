@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1688764738593" clover="3.2.0">
+  <project timestamp="1688764738593" name="All files">
+    <metrics statements="19" coveredstatements="19" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1" elements="30" coveredelements="30" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
+    <file name="firstOccurIdxLC28.js" path="C:\Users\alexa\Desktop\codeAndcollection\codeAndTestCollection\firstOccurIdxLC28\firstOccurIdxLC28.js">
+      <metrics statements="19" coveredstatements="19" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
+      <line num="3" count="8" type="stmt"/>
+      <line num="4" count="8" type="stmt"/>
+      <line num="6" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="10" count="7" type="stmt"/>
+      <line num="11" count="12" type="stmt"/>
+      <line num="12" count="23" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="11" type="stmt"/>
+      <line num="14" count="11" type="stmt"/>
+      <line num="15" count="11" type="stmt"/>
+      <line num="17" count="12" type="stmt"/>
+      <line num="21" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="11" type="stmt"/>
+      <line num="23" count="27" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="7" type="stmt"/>
+      <line num="25" count="7" type="stmt"/>
+      <line num="29" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="30" count="4" type="stmt"/>
+      <line num="33" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>

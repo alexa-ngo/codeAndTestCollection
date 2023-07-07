@@ -7,6 +7,7 @@ Here is an example how a coverage report looks like:
 ![Alt text](image-3.png)
 
 - Validate Parentheses LC 20: Determine if the input string is valid.
+- Find the Index of the First Occurence in a String LC 28.
 - Validate Palindrome LC 125: Validate if the string is a palindrome.
 - Remove Linked List Elements LC 203: Remove the matching values from the linked list.
 - Validate Anagram LC 242: Given two strings s and t, return true if t is an anagram of s, and false otherwise. 
