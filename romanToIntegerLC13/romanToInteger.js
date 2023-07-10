@@ -44,7 +44,6 @@ export function romanToInteger(t) {
                 result += 1000;
                 break;
             default:
-                console.log('Oh, no! There is an error');
                 break;
         }
     }

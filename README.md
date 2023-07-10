@@ -10,6 +10,7 @@ Here is an example how a coverage report looks like:
 - Roman to Integer: Given a roman number, covert it to an integer.
 - Find the Index of the First Occurence in a String LC 28.
 - Validate Palindrome LC 125: Validate if the string is a palindrome.
+- Find single number LC 136. Every element appears twice except for one. Find that single one.
 - Remove Linked List Elements LC 203: Remove the matching values from the linked list.
 - Validate Anagram LC 242: Given two strings s and t, return true if t is an anagram of s, and false otherwise. 
 - First Bad Version LC 278: Find the first bad version in a array. 
