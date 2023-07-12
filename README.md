@@ -7,7 +7,8 @@ Here is an example how a coverage report looks like:
 ![Alt text](image-3.png)
 
 - Validate Parentheses LC 20: Determine if the input string is valid.
-- Roman to Integer: Given a roman number, covert it to an integer.
+- Roman to Integer LC 13: Given a roman number, covert it to an integer.
+- Remove Duplicates from Sorted Array LC 26
 - Find the Index of the First Occurence in a String LC 28.
 - Validate Palindrome LC 125: Validate if the string is a palindrome.
 - Find single number LC 136. Every element appears twice except for one. Find that single one.
