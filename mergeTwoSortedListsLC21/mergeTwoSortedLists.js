@@ -1,60 +1,47 @@
-export class Node {
+export class ListNode {
     constructor(value) {
-        this.value = value;
+        this.val = value;
         this.next = null;
     }
-
-    // getValue() {
-    //     return this.value
-    // }
-
-    // setValue(newValue) {
-    //     this.value = newValue;
-    // }
-
-    // getNext() {
-    //     return this.next;
-    // }
 
     setNext(newNext) {
         this.next = newNext;
     }
 }
 
-
-
 export function mergeTwoLinkedLists(l1, l2) {
 
-    if (!l1) {
-        return l2;
+    let list1 = l1;
+    let list2 = l2
+
+    if (!list1) {
+        return list2
+    }
+    if (!list2) {
+        return list1
     }
 
-    if (!l2) {
-        return l1;
-    }
-
-    let newList = new Node(0);
+    let newList = new ListNode(0);
     let headOfNewList = newList;
 
-    while (l1 !== null && l2 !== null) {
-        if (l1.val < l2.val) {
-            newList.next = l1;
-            l1 = l1.next;
+    while (list1 !== null && list2 !== null) {
+        if (list1.val < list2.val) {
+            newList.next = new ListNode(list1.val);
+            list1 = list1.next;
         } else {
-            newList.next = l2;
-            l2 = l2.next
+            newList.next = new ListNode(list2.val);
+            list2 = list2.next;
         }
         newList = newList.next;
     }
 
-    if (l1 === null) {
-        newList.next = l2;
+    if (list1 === null) {
+        newList.next = list2;
     } else {
-        newList.next = l1;
+        newList.next = list1;
     }
-    return headOfNewList.next;
+    return headOfNewList.next
 }
-
 
 
 
