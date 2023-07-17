@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1689606640139" clover="3.2.0">
+  <project timestamp="1689606640139" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="8" coveredelements="8" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+    <file name="twoSumLC1.js" path="C:\Users\alexa\Desktop\codeAndcollection\codeAndTestCollection\twoSumsLC1\twoSumLC1.js">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="3" count="8" type="stmt"/>
+      <line num="4" count="27" type="stmt"/>
+      <line num="5" count="139" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="7" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
