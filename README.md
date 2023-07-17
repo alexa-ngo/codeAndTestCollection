@@ -6,6 +6,7 @@ Here is an example how a coverage report looks like:
 
 ![Alt text](image-3.png)
 
+- Two Sum LC1: Given an array of integers nums and an integer target, return the indices.
 - Roman to Integer LC 13: Given a roman number, covert it to an integer.
 - Validate Parentheses LC 20: Determine if the input string is valid.
 - Merge Two Sorted Lists LC 21
