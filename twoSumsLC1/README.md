@@ -6,4 +6,4 @@ You may assume that each input would have exactly one solution, and you may not 
 
 You can return the answer in any order.
 
-![Alt text](image.png)
+![Alt text](image-1.png)

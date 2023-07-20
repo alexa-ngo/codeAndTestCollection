@@ -7,6 +7,6 @@ export function twoSums(nums, target) {
             }
         }
     }
-    return -1
+    return [];
 }
 

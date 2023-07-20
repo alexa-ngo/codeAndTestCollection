@@ -51,11 +51,11 @@ it("Returns [0,10] with nums = [20,4,3,-43,6,7,14,-6,5,-55] where target = -33",
     expect(results).toEqual([0, 9])
 })
 
-it("Returns -1 with nums = [-2,3,-23,232,32,1,23,2] where target = -88", () => {
+it("Returns [] with nums = [-2,3,-23,232,32,1,23,2] where target = -88", () => {
     const nums = [-2, 3, -23, 232, 32, 1, 23, 2]
     const target = -88
     const results = twoSums(nums, target)
-    expect(results).toEqual(-1)
+    expect(results).toEqual([])
 })
 
 
