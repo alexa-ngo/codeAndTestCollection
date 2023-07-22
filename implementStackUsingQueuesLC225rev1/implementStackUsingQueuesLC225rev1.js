@@ -1,4 +1,4 @@
-class Stack {
+export class Stack {
 
     constructor() {
         this.queue1 = new Queue();
@@ -6,10 +6,6 @@ class Stack {
     }
 
     fixIt() {
-        while (!this.queue1.isEmpty()) {
-            const currItem = this.queue1.dequeue();
-            this.queue2.enqueue(currItem)
-        }
         while (!this.queue2.isEmpty()) {
             const currItem2 = this.queue2.dequeue();
             this.queue1.enqueue(currItem2)
@@ -25,26 +21,43 @@ class Stack {
         return (this.queue1.isEmpty() && this.queue2.isEmpty());
     }
 
-    // We are peeking at the top of the stack and returning that number back.
+
     top() {
         const currTop = this.pop();
-        this.queue2.enqueue(currTop);
+        this.queue1.enqueue(currTop);
         return currTop;
     }
 
+    // The pop is wrong
+
     pop() {
         this.fixIt();
+        let result = 0;
         while (!this.queue1.isEmpty()) {
-            const currItem = this.queue1.dequeue();
-            this.queue2.enqueue(currItem);
+            result = this.queue1.dequeue();
+            if (this.queue1.isEmpty()) {
+                break;
+            }
+            this.queue2.enqueue(result)
         }
-        const temp = this.queue2.dequeue();
-        return temp;
+        return result;
     }
 }
 
+// def pop(self) -> int:
+// self._fix()
+// result = 0
 
-class Queue {
+// while not self._q1.is_empty():
+//     result = self._q1.dequeue()
+//     if self._q1.is_empty():
+//         break
+
+//     self._q2.enqueue(result)
+
+// return result        
+
+export class Queue {
 
     constructor() {
         this.items = [];
@@ -63,7 +76,6 @@ class Queue {
         return this.items.length === 0;
     }
 }
-
 
 
 

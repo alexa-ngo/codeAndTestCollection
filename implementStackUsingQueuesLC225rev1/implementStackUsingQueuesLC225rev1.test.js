@@ -109,7 +109,7 @@ it('Pop all of 5 items from the existing queue with 5 items', () => {
     workingStack.push(76);
     workingStack.push(98);
     const result = workingStack.pop();
-    expect(result).toEqual(20)
+    expect(result).toEqual(98)
 })
 
 
@@ -143,7 +143,7 @@ it('Push 3 times, pop 1 times', () => {
     workingStack.push(2);
     workingStack.push(3);
     const result = workingStack.pop();
-    expect(result).toEqual(1)
+    expect(result).toEqual(3)
 })
 
 it('Push 3 times, pop 1 times, push 2 more times', () => {
@@ -156,7 +156,7 @@ it('Push 3 times, pop 1 times, push 2 more times', () => {
     workingStack.push(4);
     workingStack.push(5);
     const result = workingStack.pop();
-    expect(result).toEqual(3)
+    expect(result).toEqual(5)
 })
 
 
@@ -170,7 +170,22 @@ it('Push 3 times, pop 2 times, push 2 more times', () => {
     workingStack.push(4);
     workingStack.push(5);
     const result = workingStack.pop();
-    expect(result).toEqual(3)
+    expect(result).toEqual(5)
+})
+
+
+it('Push 3 times, pop 2 times, push 2 more times', () => {
+    const workingStack = new Stack();
+    workingStack.push(1);
+    workingStack.push(2);
+    workingStack.push(3);
+    const first = workingStack.pop();
+    expect(first).toEqual(3);
+    workingStack.pop();
+    workingStack.push(4);
+    workingStack.push(5);
+    const result = workingStack.pop()
+    expect(result).toEqual(5)
 })
 
 it('Push 2 times, pop 1 time, push 1 more time', () => {
@@ -180,11 +195,8 @@ it('Push 2 times, pop 1 time, push 1 more time', () => {
     workingStack.pop();
     workingStack.push(3);
     const result = workingStack.pop();
-    expect(result).toEqual(2)
+    expect(result).toEqual(3)
 })
-
-//push push pop push
-
 
 it('Return true when the queue is empty', () => {
     const workingStack = new Stack();
@@ -217,7 +229,7 @@ it('Return 5 in when the queue is 5,7,8,9', () => {
     workingStack.push(76);
     workingStack.push(1);
     const result = workingStack.top();
-    expect(result).toEqual(20);
+    expect(result).toEqual(1);
 })
 
 
