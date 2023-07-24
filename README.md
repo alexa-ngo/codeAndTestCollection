@@ -8,6 +8,7 @@ Here is an example how a coverage report looks like:
 
 - Two Sum LC1: Given an array of integers nums and an integer target, return the indices.
 - Roman to Integer LC 13: Given a roman number, covert it to an integer.
+- Longest Common Prefix LC 14: Find the longest prefix amongst an array of strings.
 - Validate Parentheses LC 20: Determine if the input string is valid.
 - Merge Two Sorted Lists LC 21
 - Remove Duplicates from Sorted Array LC 26
