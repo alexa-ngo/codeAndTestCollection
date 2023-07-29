@@ -23,6 +23,7 @@ Here is an example how a coverage report looks like:
 - Word Pattern LC 290: Given a pattern and a string s, find if s follows the same pattern.
 - Validate Perfect Square LC 367: Given a positive integer num, return true if num is a perfect square or false otherwise.
 - Island Perimeter LC 463  
+- Find All Disappeared Numbers LC 448: Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 - Keyboard Row LC 500: Given an array of strings words, return the words that can be typed using letters of the alphabet on only one row of American keyboard.
 - Defanging an IP Address LC 1108: Given a valid (IPv4) IP address, return a defanged version of that IP address.
 - Armstrong Number LC 1134: Given an integer n, return true if and only if it is an Armstrong number. The k-digit number n is an Armstrong number if and only if the kth power of each digit sums to n.
