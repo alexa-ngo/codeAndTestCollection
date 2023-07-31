@@ -23,6 +23,7 @@ Here is an example how a coverage report looks like:
 - Move Zeros LC 283: Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 - Word Pattern LC 290: Given a pattern and a string s, find if s follows the same pattern.
 - Validate Perfect Square LC 367: Given a positive integer num, return true if num is a perfect square or false otherwise.
+- Find the Difference LC 389: You are given two strings s and t. Return the letter that was added to t.
 - Island Perimeter LC 463  
 - Find All Disappeared Numbers LC 448: Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 - Keyboard Row LC 500: Given an array of strings words, return the words that can be typed using letters of the alphabet on only one row of American keyboard.
