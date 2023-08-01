@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1690901028514" clover="3.2.0">
+  <project timestamp="1690901028514" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2" elements="22" coveredelements="22" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
+    <file name="relativeRanksLC506.js" path="C:\Users\alexa\Desktop\codeAndcollection\codeAndTestCollection\relativeRanksLC506\relativeRanksLC506.js">
+      <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <line num="3" count="6" type="stmt"/>
+      <line num="4" count="6" type="stmt"/>
+      <line num="6" count="6" type="stmt"/>
+      <line num="7" count="43" type="stmt"/>
+      <line num="10" count="37" type="stmt"/>
+      <line num="12" count="6" type="stmt"/>
+      <line num="14" count="43" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="6" type="stmt"/>
+      <line num="16" count="37" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="6" type="stmt"/>
+      <line num="18" count="31" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="6" type="stmt"/>
+      <line num="21" count="25" type="stmt"/>
+      <line num="24" count="6" type="stmt"/>
+    </file>
+  </project>
+</coverage>
