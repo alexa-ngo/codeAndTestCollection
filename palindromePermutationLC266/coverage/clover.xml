@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1690994516560" clover="3.2.0">
+  <project timestamp="1690994516560" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1" elements="25" coveredelements="25" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
+    <file name="palindromePermutationLC266.js" path="C:\Users\alexa\Desktop\codeAndcollection\codeAndTestCollection\palindromePermutationLC266\palindromePermutationLC266.js">
+      <metrics statements="14" coveredstatements="14" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
+      <line num="2" count="9" type="stmt"/>
+      <line num="3" count="9" type="stmt"/>
+      <line num="5" count="9" type="stmt"/>
+      <line num="6" count="54" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="32" type="stmt"/>
+      <line num="9" count="22" type="stmt"/>
+      <line num="13" count="9" type="stmt"/>
+      <line num="14" count="27" type="cond" truecount="4" falsecount="0"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="17" count="24" type="cond" truecount="4" falsecount="0"/>
+      <line num="18" count="8" type="stmt"/>
+      <line num="21" count="6" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
