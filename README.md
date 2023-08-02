@@ -19,6 +19,7 @@ Here is an example how a coverage report looks like:
 - Isomorphic String LC 205: Given two strings s and t, determine if they are isomorphic.
 - Validate Anagram LC 242: Given two strings s and t, return true if t is an anagram of s, and false otherwise. 
 - Add Digits LC 258: Repeatedly add all its digits until the result only has one digit.
+- Palindrome Permutation LC 266:Given a string s, return true if a permutation of the string could form a palindrome and false otherwise.
 - First Bad Version LC 278: Find the first bad version in a array. 
 - Move Zeros LC 283: Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 - Word Pattern LC 290: Given a pattern and a string s, find if s follows the same pattern.
