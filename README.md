@@ -17,6 +17,7 @@ Here is an example how a coverage report looks like:
 - Find single number LC 136. Every element appears twice except for one. Find that single one.
 - Remove Linked List Elements LC 203: Remove the matching values from the linked list.
 - Isomorphic String LC 205: Given two strings s and t, determine if they are isomorphic.
+- Contains Duplicate II LC 219: Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array.
 - Validate Anagram LC 242: Given two strings s and t, return true if t is an anagram of s, and false otherwise. 
 - Add Digits LC 258: Repeatedly add all its digits until the result only has one digit.
 - Palindrome Permutation LC 266:Given a string s, return true if a permutation of the string could form a palindrome and false otherwise.
