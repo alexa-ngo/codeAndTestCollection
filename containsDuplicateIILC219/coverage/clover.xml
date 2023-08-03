@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1691075149233" clover="3.2.0">
+  <project timestamp="1691075149233" name="All files">
+    <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="12" coveredelements="12" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
+    <file name="containsDuplicate.js" path="C:\Users\alexa\Desktop\codeAndcollection\codeAndTestCollection\containsDuplicateIILC219\containsDuplicate.js">
+      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="2" count="6" type="stmt"/>
+      <line num="3" count="25" type="stmt"/>
+      <line num="4" count="25" type="stmt"/>
+      <line num="5" count="58" type="cond" truecount="4" falsecount="0"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="8" count="56" type="stmt"/>
+      <line num="11" count="4" type="stmt"/>
+    </file>
+  </project>
+</coverage>
