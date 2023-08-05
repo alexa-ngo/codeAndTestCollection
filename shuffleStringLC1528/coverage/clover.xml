@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1691238122207" clover="3.2.0">
+  <project timestamp="1691238122207" name="All files">
+    <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="9" coveredelements="9" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
+    <file name="shuffleString.js" path="C:\Users\alexa\Desktop\codeAndcollection\codeAndTestCollection\shuffleStringLC1528\shuffleString.js">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="6" type="stmt"/>
+      <line num="3" count="6" type="stmt"/>
+      <line num="5" count="6" type="stmt"/>
+      <line num="6" count="33" type="stmt"/>
+      <line num="9" count="6" type="stmt"/>
+      <line num="10" count="33" type="stmt"/>
+      <line num="11" count="33" type="stmt"/>
+      <line num="13" count="6" type="stmt"/>
+    </file>
+  </project>
+</coverage>
