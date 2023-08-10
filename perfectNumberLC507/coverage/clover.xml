@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1691678225943" clover="3.2.0">
+  <project timestamp="1691678225943" name="All files">
+    <metrics statements="11" coveredstatements="11" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1" elements="15" coveredelements="15" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+    <file name="perfectNumberLC507.js" path="C:\Users\alexa\Desktop\codeAndcollection\codeAndTestCollection\perfectNumberLC507\perfectNumberLC507.js">
+      <metrics statements="11" coveredstatements="11" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="2" count="8" type="stmt"/>
+      <line num="3" count="8" type="stmt"/>
+      <line num="4" count="8" type="stmt"/>
+      <line num="5" count="8" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="7566371" type="cond" truecount="1" falsecount="0"/>
+      <line num="7" count="40" type="stmt"/>
+      <line num="8" count="40" type="stmt"/>
+      <line num="9" count="7566371" type="stmt"/>
+      <line num="10" count="8" type="stmt"/>
+      <line num="11" count="8" type="stmt"/>
+    </file>
+  </project>
+</coverage>
