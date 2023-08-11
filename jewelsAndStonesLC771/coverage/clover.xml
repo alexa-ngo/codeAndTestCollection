@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1691764092541" clover="3.2.0">
+  <project timestamp="1691764092541" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="9" coveredelements="9" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
+    <file name="jewelsAndStonesLC771.js" path="C:\Users\alexa\Desktop\codeAndcollection\codeAndTestCollection\jewelsAndStonesLC771\jewelsAndStonesLC771.js">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="3" count="6" type="stmt"/>
+      <line num="5" count="6" type="stmt"/>
+      <line num="7" count="6" type="stmt"/>
+      <line num="8" count="31" type="cond" truecount="2" falsecount="0"/>
+      <line num="9" count="16" type="stmt"/>
+      <line num="12" count="6" type="stmt"/>
+    </file>
+  </project>
+</coverage>
