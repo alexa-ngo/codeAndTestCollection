@@ -33,4 +33,5 @@ Here is an example how a coverage report looks like:
 - Jewels and Stones LC 771: A given string jewels represent the types of stones that are jewels, and stones representing the stones you have. How many of the stones you have are also jewels?
 - Defanging an IP Address LC 1108: Given a valid (IPv4) IP address, return a defanged version of that IP address.
 - Armstrong Number LC 1134: Given an integer n, return true if and only if it is an Armstrong number. The k-digit number n is an Armstrong number if and only if the kth power of each digit sums to n.
+- How Many Numbers Are Smaller Than the Current Number LC 1365
 - Shuffle String LC 1528: Return the shuffled string.
