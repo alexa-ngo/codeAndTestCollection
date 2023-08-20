@@ -1,6 +1,6 @@
 function mergeSortedArray(nums1, m, nums2, n) {
 
-    const copyOfNums1 = nums1.slice(0, m)
+    const copyOfNums1 = [...nums1]
     const lenNums1Copy = m
     const lenNums2 = n
 
@@ -36,3 +36,4 @@ const nums1 = [1, 2, 3, 0, 0, 0]
 const m = 3
 const nums2 = [2, 5, 6]
 const n = 3
+console.log(mergeSortedArray(nums1, m, nums2, n))
