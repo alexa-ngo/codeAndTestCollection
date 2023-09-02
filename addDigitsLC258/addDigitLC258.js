@@ -7,16 +7,16 @@ export function addDigit(num) {
 
         while (quotient > 0) {
 
-            sum += (quotient % 10)
-            quotient = Math.trunc(quotient / 10)
+            sum += (quotient % 10);
+            quotient = Math.trunc(quotient / 10);
         }
 
         if (sum < 10) {
             break;
         } else {
-            quotient = sum
-            sum = 0
+            quotient = sum;
+            sum = 0;
         }
     }
     return sum;
-}
+};
