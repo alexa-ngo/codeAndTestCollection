@@ -22,7 +22,7 @@ long\
 line');
 
 // Two-line string written on two lines:
-console.log(`the newline characetrs at the end of this line
+console.log(`the newline characters at the end of this line
 is included literally in this string`);
 
 let s = "hello, world";
