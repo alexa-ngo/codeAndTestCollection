@@ -30,3 +30,7 @@ console.log(s.split(", "));
 
 console.log("<>".repeat(5));
 
+let o = { x: 1 };
+console.log('before', o);
+o.x = 2;
+console.log('after', o.x);
