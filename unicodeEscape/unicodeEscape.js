@@ -47,7 +47,26 @@
 
 // let f = null, x = 0;
 
-let point = { x: 1, y: 1 };
-console.log("x" in point); // expeect: true
-console.log("z" in point); // expect: false
-console.log("toString" in point); // expect true because the object inherits toSting method;
+// let point = { x: 1, y: 1 };
+// console.log("x" in point); // expeect: true
+// console.log("z" in point); // expect: false
+// console.log("toString" in point); // expect true because the object inherits toSting method;
+
+// i = j = 1;
+// k = 2;
+// if (i === j) {
+//     if (j === k) {
+//         console.log("i equals k");
+//     } else {
+//         console.log("i doesn't equal j");
+//     }
+// }
+
+let o = { x: 1, y: 2, z: 3 };
+let pairs = "";
+for (let [k, v] of Object.entries(o)) {
+    pairs += k + v;
+}
+pairs
+console.log('this is the pairs', pairs);
+
