@@ -46,4 +46,4 @@ const employee = {
 for (const i in employee) {
     console.log(i);
     console.log(employee[i]);
-}
+};
