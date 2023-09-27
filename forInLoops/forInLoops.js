@@ -11,7 +11,7 @@
 
 // How the for/in loop works:
 // 1. The JavaScript interpreter first evaluates the object expression.
-// 2. If it evalues to null or undefined, the interpreter skipps the loop and moves onto to the next statement.
+// 2. If it evalues to null or undefined, the interpreter skips the loop and moves onto to the next statement.
 // 3. The interpreter now executes the body of the loop once for each enumerable propertyu of the object.
 // 4. Before each iteration, the interpreter evaluates the variable expression and assigns the name of the property (a string value) to it.
 // 5. The variable may evalulate differently each time.
