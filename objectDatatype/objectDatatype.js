@@ -40,3 +40,15 @@ me.isTruck = true;  // Inherited properties can be overwritten
 
 me.printInformation();
 // Expected output: "The make of this car is a Honda. Am I a truck? true."
+
+
+// We can have objects that don't inherit anything
+let o2 = Object.create(null);   // o2 doesn't inherit props or methods
+console.log(o2)
+
+// We can guard against accidental modifications
+/*
+let o = { x: "don't change this value" };
+library.function(Object.create(o));
+*/
+

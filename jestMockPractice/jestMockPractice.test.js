@@ -13,14 +13,16 @@ describe("This tests the add function taking in x and y. ", () => {
 
     it("Uses x = 4 and y = 5", () => {
         const addSpy = jest.spyOn(practiceLib, "add"); //Takes in the practiceLib as a library and uses the add method
-        addSpy.mockImplementation(() => 5);
+        addSpy.mockImplementation(() => 6);
 
         const x = practiceLib.add(4, 5)
-        console.log(x)
+        console.log('here is ', x)
     });
 
+    // the x is reset here to undefined.
+
     it("Uses x = 1 and y = 99", () => {
-        console.log(practiceLib.add(1, 99));
+        console.log('here is 99', practiceLib.add(1, 99));
     });
 });
 

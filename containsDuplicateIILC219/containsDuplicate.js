@@ -8,5 +8,5 @@ export function containsNearbyDuplicate(nums, k) {
             j--;
         }
     }
-    return false
+    return false;
 };
