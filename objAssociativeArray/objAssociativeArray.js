@@ -43,13 +43,13 @@ portfolio.appl = 10;
 portfolio.ibm = 50;
 portfolio.meta = 15;
 portfolio.msft = 30;
-console.log('Portfolio before', portfolio);
+console.log('The stocks in the Portfolio before the update:', portfolio);
 
 addStock(portfolio, "ibm", -3);
 addStock(portfolio, "googl", 2);
 addStock(portfolio, "appl", 10);
 
-console.log('Portfolio after', portfolio);
+console.log('The stocks in the Portfolio after the update:', portfolio);
 
-console.log('The total value', computeValue(portfolio));
+console.log(`The total value of the Portfolio: $${computeValue(portfolio)}.`);
 
