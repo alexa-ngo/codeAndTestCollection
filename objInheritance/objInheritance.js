@@ -15,3 +15,59 @@ let redwood = Object.create(evergreen);
 redwood.height = 300;
 let f = redwood.toString();
 console.log(`Trees at the national park are ${redwood.height} feet tall and have ${redwood.color} leaves.`);
+
+
+class Car {
+    constructor() {
+        this.drive = sayHi();
+    }
+}
+
+function sayHi() {
+    console.log(`Hi`);
+}
+
+
+const carTest = new Car();
+Car.prototype.x = 2;
+
+const carA = new Car();
+const carB = new Car();
+const carC = new Car();
+
+console.log('This is carA.x: ', carA.x); // Expect: 2
+console.log('This is carB.x: ', carB.x); // Expect: 2
+console.log('This is carC.x: ', carC.x); // Expect: 2
+
+Car.prototype.x = 3;
+
+console.log('This is carA.x: ', carA.x); // Expect: 3
+console.log('This is carB.x: ', carB.x); // Expect: 3
+console.log('This is carC.x: ', carC.x); // Expect: 3
+
+Car.x = 4;
+
+console.log('This is carA.x: ', carA.x); // Expect: 3
+console.log('This is carB.x: ', carB.x); // Expect: 3
+console.log('This is carC.x: ', carC.x); // Expect: 3
+
+Car.prototype.x = 8;
+
+console.log('This is carA.x: ', carA.x); // Expect: 8
+console.log('This is carB.x: ', carB.x); // Expect: 8
+console.log('This is carC.x: ', carC.x); // Expect: 8
+
+
+// carA inherits from Object.prototpe and now has own color property and carB and carC does not have it.
+carA.color = "red";
+console.log('This is carA with color property', carA);
+console.log('This is carB with color property', carB);
+console.log('This is carC with color property', carC);
+
+let carAUpgraded = Object.create(carA);
+carAUpgraded.seats = "leather";
+console.log('This is carAupgraded with leather seats', carAUpgraded);
+
+console.log('This is carA.x: ', carA); // Expect: 3
+console.log('This is carB.x: ', carB); // Expect: 3
+console.log('This is carC.x: ', carC); // Expect: 3
