@@ -1,15 +1,16 @@
 // Decimal to Hexadecimal converter
 
-function decimalToHex(num, sourceBase) {
+function decimalToHex(userInput, sourceBase) {
 
     if (sourceBase >= 17) {
         return 'Sorry, this program can only go up to base16.';
     }
 
     let result = "";
-    let quotient = num;
+    let quotient = userInput;
 
     while (quotient !== 0) {
+
         const remainder = quotient % sourceBase;
         quotient = Math.trunc(quotient / sourceBase);
 
@@ -39,4 +40,4 @@ function decimalToHex(num, sourceBase) {
     return result;
 }
 
-console.log(decimalToHex(922337203685477, 17)); // up to base 17
+//console.log(decimalToHex(922337203685477, 17)); // up to base 17
