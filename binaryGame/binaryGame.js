@@ -2,6 +2,10 @@
 
 function decimalToHex(num, sourceBase) {
 
+    if (sourceBase >= 17) {
+        return 'Sorry, this program can only go up to base16.';
+    }
+
     let result = "";
     let quotient = num;
 
@@ -35,4 +39,4 @@ function decimalToHex(num, sourceBase) {
     return result;
 }
 
-//console.log(decimalToHex(922337203685477, 16)); 
+console.log(decimalToHex(922337203685477, 17)); // up to base 17
