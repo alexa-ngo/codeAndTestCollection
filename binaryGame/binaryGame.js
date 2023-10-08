@@ -1,43 +1,27 @@
-// Decimal to Hexadecimal converter
+// Decimal to Binary Converter
 
-function decimalToHex(userInput, sourceBase) {
-
-    if (sourceBase >= 17) {
-        return 'Sorry, this program can only go up to base16.';
-    }
+function decimalToBinary(userInput) {
 
     let result = "";
     let quotient = userInput;
 
     while (quotient !== 0) {
-
-        const remainder = quotient % sourceBase;
-        quotient = Math.trunc(quotient / sourceBase);
-
-        if (remainder < 10) {
-            result = remainder + result;
-        } else {
-            if (remainder === 10) {
-                result = "A" + result;
-            }
-            if (remainder === 11) {
-                result = "B" + result;
-            }
-            if (remainder === 12) {
-                result = "C" + result;
-            }
-            if (remainder === 13) {
-                result = "D" + result;
-            }
-            if (remainder === 14) {
-                result = "E" + result;
-            }
-            if (remainder === 15) {
-                result = "F" + result;
-            }
-        }
+        const remainder = quotient % 2;
+        quotient = Math.trunc(quotient / 2);
+        result = remainder + result;
     }
     return result;
 }
 
-//console.log(decimalToHex(922337203685477, 17)); // up to base 17
+//console.log(decimalToBinary(77)); // Expected: 1001101
+//console.log(decimalToBinary(92013912)); // Expected: 101011111000000010101011000
+//console.log(decimalToBinary(312312311)); // Expected: 10010100111011000000111110111
+//console.log(decimalToBinary(231231)); // Expected: 111000011100111111
+//console.log(decimalToBinary(11)); // Expected: 1011
+//console.log(decimalToBinary(1032)); // Expected: 10000001000
+
+
+// Binary to Decimal Converter
+
+
+
