@@ -14,6 +14,9 @@ let b = [1, 2, 3, 4];
 delete b[2];
 console.log('After deleing element b the array is ', b); // [1, 2, <1 empty item>, 4]
 
+let dense = b.filter(() => true);
+console.log('Let us make it dense now', dense); // [1, 2, 4]
+
 // forEach
 let age = [30, 32, 34, 60];
 let sum = 0;
@@ -23,9 +26,14 @@ console.log('The total age of the age array: ', sum);
 
 // Now we are going to increment each array element by 5
 age.forEach(function (v, i, a) {
+    console.log('here is the current value of the array:', v);
+    console.log('here is the array before:', a);
+    console.log('here is the index: ', i);
+    console.log(' ');
     a[i] = v + 5;
+    console.log('here is the a after: ', a);
 });
-console.log(age);[35, 37, 39, 65];
+console.log(age); //[35, 37, 39, 65];
 
 // map()
 let c = [2, 4, 6];
