@@ -75,3 +75,10 @@ console.log(nice); // [2,1]
 nice = [];
 nice.unshift(1, 2); // [1, 2]
 console.log(nice)
+
+// every() and some()
+// We input a predicate function (functions that returns a single True or False). 
+// Every() will return true if all the elenets in the array are true and some() will return true if at least one element of the array is true.
+let friends = [1, 2, 3, 4, 5, 20];
+console.log('every friend is less than 20', friends.every(x => x < 0)); // False
+console.log('some friends are less than 20', friends.some(x => x < 20)); // True
