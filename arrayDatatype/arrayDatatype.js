@@ -7,7 +7,7 @@ console.log([...new Set(animal)]); // ["e", "l", "p", "h", "a", "n", "t"]
 
 //let a = new Array();
 let a = new Array(5, 4, 3, 2, 1, "testing, testing");
-console.log(a)
+console.log(a);
 
 // Deleting an element from the array makes that index sparse
 let b = [1, 2, 3, 4];
@@ -44,3 +44,34 @@ let f = [9, 8, 7, 6, 5, 4, 3, 2, 1];
 //console.log(f.filter(x => x < 5)); // [4, 3, 2, 1];
 
 console.log(f.filter((x, i) => i % 2 === 0)); // [9, 7, 5, 3, 1]; Reutnrs every other
+
+// flattening arrays
+console.log([1, 2, [3]].flat());
+
+// push all the arrays of one array into another array
+let stack = [1, 2, 3, 4, 5];
+values = [99, 100, 101];
+
+stack.push(6);
+console.log('stack before', stack); // [1,2,3,4,5,6]
+stack.push(...values);
+console.log('stack after: ', stack); // [1,2,3,4,5,6,99,100,101]
+
+// shift 
+let hi = [];
+hi.push("hello", "there");
+console.log('This is hi: ', hi);  // ['hello', 'there']
+hi.shift();
+console.log('This is after using shift: ', hi)  // ['there']
+hi.push("Welcome", "to", "the", "party");
+console.log('pushing: "Welcome", "to", "the", "party": ', hi)  // ['there', 'Welcome', 'to', 'the', 'party']
+
+// unshift
+let nice = [];
+nice.unshift(1)
+nice.unshift(2)
+console.log(nice); // [2,1]
+
+nice = [];
+nice.unshift(1, 2); // [1, 2]
+console.log(nice)
