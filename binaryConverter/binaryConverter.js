@@ -3,7 +3,7 @@
 function decimalToBinary(userInput) {
 
     let result = "";
-    let quotient = userInput;
+    let quotient = userInput; // initializes as the userInput
 
     while (quotient !== 0) {
         const remainder = quotient % 2;
@@ -26,13 +26,13 @@ function decimalToBinary(userInput) {
 function binaryToDecimal(userInput) {
 
     const binary = userInput;
-
+    let digitCounter = -1;
     let result = 0;
-    let value;
 
-    for (let i = 0; i < binary.length; i++) {
-        value = "0123456789abcdef".indexOf(binary.charAt(i));
-        result = result * 2 + value;   // Multiply each digit of the binary number with its corresponding power of 2 and sum.
+    for (let i = binary.length; i >= 1; i--) {
+        const valueOfBinary = binary.charAt(i - 1);
+        digitCounter++;
+        result += valueOfBinary * 2 ** digitCounter;
     }
     return result;
 }
@@ -41,4 +41,5 @@ function binaryToDecimal(userInput) {
 //console.log(binaryToDecimal("10110"));    // Expected: 22
 //console.log(binaryToDecimal("1110"));    // Expected: 14
 //console.log(binaryToDecimal("101001"));    // Expected: 41
-//console.log(binaryToDecimal("111"));    // Expected: 7
+//console.log(binaryToDecimal("111"));    // Expected: 41
+console.log((binaryToDecimal("100101011"))); // Expected: 299
