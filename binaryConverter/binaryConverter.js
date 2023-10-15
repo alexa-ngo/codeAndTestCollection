@@ -2,8 +2,8 @@
 
 function decimalToBinary(userInput) {
 
-    let result = "";
     let quotient = userInput; // initializes as the userInput
+    let result = "";
 
     while (quotient !== 0) {
         const remainder = quotient % 2;
@@ -25,8 +25,8 @@ function decimalToBinary(userInput) {
 
 function binaryToDecimal(userInput) {
 
-    const binary = userInput;
-    let digitCounter = -1;
+    const binary = userInput;   // initializes as the userInput
+    let digitCounter = -1;      // starts from the right side of the userInput string
     let result = 0;
 
     for (let i = binary.length; i >= 1; i--) {
