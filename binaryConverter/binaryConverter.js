@@ -4,6 +4,7 @@ function decimalToBinary(userInput) {
 
     let quotient = userInput; // initializes as the userInput
     let result = "";
+    let spacedResult = "";
 
     while (quotient !== 0) {
         const remainder = quotient % 2;
@@ -13,7 +14,14 @@ function decimalToBinary(userInput) {
     if (result.length % 2 !== 0) {
         result = '0' + result;
     }
-    return result;
+
+    for (let i = 0; i < result.length; i++) {
+        if (i % 4 === 0) {
+            spacedResult += " ";
+        }
+        spacedResult += result.charAt(i);
+    }
+    return spacedResult.substring(1, spacedResult.length);
 }
 
 console.log(decimalToBinary(1114)); // Expected: 0100 0101 1010
