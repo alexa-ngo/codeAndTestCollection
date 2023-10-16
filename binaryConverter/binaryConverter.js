@@ -10,10 +10,13 @@ function decimalToBinary(userInput) {
         quotient = Math.trunc(quotient / 2);
         result = remainder + result;
     }
+    if (result.length % 2 !== 0) {
+        result = '0' + result;
+    }
     return result;
 }
 
-//console.log(decimalToBinary(77)); // Expected: 1001101
+console.log(decimalToBinary(1114)); // Expected: 0100 0101 1010
 //console.log(decimalToBinary(92013912)); // Expected: 101011111000000010101011000
 //console.log(decimalToBinary(312312311)); // Expected: 10010100111011000000111110111
 //console.log(decimalToBinary(231231)); // Expected: 111000011100111111
@@ -42,4 +45,4 @@ function binaryToDecimal(userInput) {
 //console.log(binaryToDecimal("1110"));    // Expected: 14
 //console.log(binaryToDecimal("101001"));    // Expected: 41
 //console.log(binaryToDecimal("111"));    // Expected: 41
-console.log((binaryToDecimal("100101011"))); // Expected: 299
+//console.log((binaryToDecimal("100101011"))); // Expected: 299
