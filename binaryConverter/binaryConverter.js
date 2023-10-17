@@ -11,7 +11,8 @@ function decimalToBinary(userInput) {
         quotient = Math.trunc(quotient / 2);
         result = remainder + result;
     }
-    if (result.length % 2 !== 0) {
+
+    while (result.length % 4 !== 0) {
         result = '0' + result;
     }
 
@@ -24,11 +25,11 @@ function decimalToBinary(userInput) {
     return spacedResult.substring(1, spacedResult.length);
 }
 
-console.log(decimalToBinary(1114)); // Expected: 0100 0101 1010
+//console.log(decimalToBinary(1114)); // Expected: 0100 0101 1010
 //console.log(decimalToBinary(92013912)); // Expected: 101011111000000010101011000
 //console.log(decimalToBinary(312312311)); // Expected: 10010100111011000000111110111
 //console.log(decimalToBinary(231231)); // Expected: 111000011100111111
-//console.log(decimalToBinary(11)); // Expected: 1011
+//console.log(decimalToBinary(24)); // Expected: 0001 1000
 //console.log(decimalToBinary(1032)); // Expected: 10000001000
 
 
@@ -50,7 +51,72 @@ function binaryToDecimal(userInput) {
 
 //console.log(binaryToDecimal("10111010111"));    // Expected: 1495
 //console.log(binaryToDecimal("10110"));    // Expected: 22
-//console.log(binaryToDecimal("1110"));    // Expected: 14
+//console.log(binaryToDecimal("1001011"));    // Expected: 75
 //console.log(binaryToDecimal("101001"));    // Expected: 41
 //console.log(binaryToDecimal("111"));    // Expected: 41
 //console.log((binaryToDecimal("100101011"))); // Expected: 299
+//console.log(binaryToDecimal("101101")); // Expected: 45
+
+
+function twoComplement(userInput) {
+
+    const input = userInput;
+    let signBitFlag = 0;
+    let decimalVal = "";
+    let invertBits = "";
+    let addOne = "1";
+    let carryOver = "0";
+    let tempResult = "";
+    let result = "";
+
+    // check first character for sign
+    if (input.charAt(0) === "-") {
+        signBitFlag = 1;
+    };
+
+    // get decimalVal
+    for (let i = 0; i < input.length; i++) {
+        if (input.charAt(i) !== "-") {
+            decimalVal += input.charAt(i)
+        }
+    };
+
+    // convert the decimalVal to binary
+    const binaryResult = decimalToBinary(decimalVal);
+
+    // invert the bits
+    for (let j = 0; j < binaryResult.length; j++) {
+        if (binaryResult.charAt(j) === "1") {
+            invertBits += 0;
+        } else if (binaryResult.charAt(j) === " ") {
+            invertBits += " ";
+        } else {
+            invertBits += 1;
+        }
+    };
+
+    // add 1 to the result
+    console.log('Invert Bits', invertBits)
+    for (let k = 0; k < binaryResult.length; k++) {
+        if (invertBits.charAt(k) === "1" && addOne === "1") {
+            tempResult += 0;
+            addOne = "0";
+            carryOver = "1";
+        } else if (invertBits.charAt(k) === "1" && carryOver === "1") {
+            tempResult += 0;
+            carryOver = "1";
+        } else if (invertBits.charAt(k) === "0" && carryOver === "1") {
+            tempResult += 1;
+            carryOver = "0";
+        } else if (invertBits.charAt(k) === " ") {
+            tempResult += " ";
+        }
+        else {
+            tempResult += invertBits.charAt(k);
+        }
+    }
+    return tempResult;
+
+};
+
+console.log(twoComplement("-24"));
