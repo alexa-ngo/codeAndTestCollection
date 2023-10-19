@@ -58,15 +58,16 @@ function binaryToDecimal(userInput) {
 //console.log(binaryToDecimal("101101")); // Expected: 45
 
 
-function twoComplement(userInput) {
+function addBinary(a, b) {
+    return (parseInt(a, 2) + parseInt(b, 2)).toString(2);
+}
+
+
+function twoComplementDecToBinary(userInput) {
 
     const input = userInput;
-    let signBitFlag = 0;
     let decimalVal = "";
     let invertBits = "";
-    let addOne = "1";
-    let carryOver = "0";
-    let tempResult = "";
     let result = "";
 
     // check first character for sign
@@ -77,7 +78,7 @@ function twoComplement(userInput) {
     // get decimalVal
     for (let i = 0; i < input.length; i++) {
         if (input.charAt(i) !== "-") {
-            decimalVal += input.charAt(i)
+            decimalVal += input.charAt(i);
         }
     };
 
@@ -96,27 +97,51 @@ function twoComplement(userInput) {
     };
 
     // add 1 to the result
-    console.log('Invert Bits', invertBits)
-    for (let k = 0; k < binaryResult.length; k++) {
-        if (invertBits.charAt(k) === "1" && addOne === "1") {
-            tempResult += 0;
-            addOne = "0";
-            carryOver = "1";
-        } else if (invertBits.charAt(k) === "1" && carryOver === "1") {
-            tempResult += 0;
-            carryOver = "1";
-        } else if (invertBits.charAt(k) === "0" && carryOver === "1") {
-            tempResult += 1;
-            carryOver = "0";
-        } else if (invertBits.charAt(k) === " ") {
-            tempResult += " ";
-        }
-        else {
-            tempResult += invertBits.charAt(k);
-        }
-    }
-    return tempResult;
+    const noSpace = invertBits.replace(" ", "");
 
+    result = addBinary(noSpace, "0001");
+    return result;
 };
 
-console.log(twoComplement("-24"));
+//console.log(twoComplementDecToBinary("-126"));
+//console.log(twoComplementDecToBinary("-54"));  // Expected: 11001010
+//console.log(twoComplementDecToBinary("91"));    // Expected: 10100101
+//console.log(twoComplementDecToBinary("111")); // Expected: 10010001
+//console.log(twoComplementDecToBinary("-94"));   // Expected: 10100010
+//console.log(twoComplementDecToBinary("-32"));   // Expected: 11100000
+//console.log(twoComplementDecToBinary("126")); // Expected: 10000010
+
+
+
+function twoComplementBinaryToDec(userInput) {
+
+    const binaryResult = userInput;
+    let invertBits = "";
+
+    // Invert all bits
+    for (let j = 0; j < binaryResult.length; j++) {
+        if (binaryResult.charAt(j) === "1") {
+            invertBits += 0;
+        } else if (binaryResult.charAt(j) === " ") {
+            invertBits += " ";
+        } else {
+            invertBits += 1;
+        }
+    };
+
+    // Add 1 to the result
+    const noSpace = invertBits.replace(" ", "");
+    const afterAddingOne = addBinary(noSpace, "0001");
+
+    // Convert to Decimal
+    let resultOfBinaryToDecimal = binaryToDecimal(afterAddingOne);
+
+    // Add negative sign (The original MSB was 1)
+    if (binaryResult.charAt(0) === "1") {
+        resultOfBinaryToDecimal = "-" + resultOfBinaryToDecimal;
+    }
+    return resultOfBinaryToDecimal;
+};
+
+console.log(twoComplementBinaryToDec("10010001"));
+
