@@ -11,10 +11,9 @@
 
 
 let names = ["Amy", "Ann", "Carmen", "Lynn", "Prissy", "Sabrina", "Shawn"]
-const a = names.splice(3)     //  removed values: ["Lynn", "Prissy", "Sabrina", "Shawn"]; list is now ["Amy", "Ann", "Carmen"]
-const b = names.splice(1, 2)  // removed values: ["Ann", "Carmen"]; list is now ["Amy"]
-const c = names.splice(0, 1)  // removed values: ["Amy"]; list is now []
-
+names.splice(3)     //  removed values: ["Lynn", "Prissy", "Sabrina", "Shawn"]; list is now ["Amy", "Ann", "Carmen"]
+names.splice(1, 2)  // removed values: ["Ann", "Carmen"]; list is now ["Amy"]
+names.splice(0, 1)  // removed values: ["Amy"]; list is now []
 
 
 // The first two arguments to splice() specify which array elements are to be deleted.
