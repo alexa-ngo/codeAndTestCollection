@@ -43,3 +43,12 @@ a.fill(3, 3, -2)
 //     { name: 'Dragon', color: 'pink', age: 45 },
 //     { name: 'Dragon', color: 'pink', age: 45 }
 //   ]
+
+
+// Now let's fill index 4 with "Goodbye".
+a.fill("Goodbye", 4, -1)
+
+// Now let's fill in index 4 with "Goodbye" and try to wrap it around to even index 2!
+a.fill("Goodbye", 4, -4)        // it doesn't work
+
+a.fill("wrap around", -1, -4)   // it still doesn't work
