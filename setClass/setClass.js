@@ -1,5 +1,9 @@
 // Set Class
 
+// Purpose of a set: A set is a container that stores ONLY unique values.
+
+// Applications of a set: Storing unique names
+
 // Features of the Set Class:
 //      - not ordered or indexed, value is either a member of the class or not, it is not possible to ask for how many times a value appears in a set
 //      - can be an array or iterable object
