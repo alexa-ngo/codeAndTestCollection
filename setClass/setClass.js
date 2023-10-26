@@ -22,7 +22,8 @@
 const friends = new Set(['Amy', 'Carmen', 'Christine', "Lynn", 'Priscilla', 'Shawn']);
 
 // size
-friends.size// 6
+friends.size    // 6
+
 
 // for/of loop
 let listOfGuest = "";
@@ -51,7 +52,7 @@ friends.has('Annie')       // false
 
 
 // Spread operator
-[...friends]               // [ 'Christine', 'Lynn', 'Priscilla', 'Alexa' ]: the set is converted into an Array
+//[...friends]               // [ 'Christine', 'Lynn', 'Priscilla', 'Alexa' ]: the set is converted into an Array
 Math.max(...friends)       // NaN
 friends.add(8)
 friends.add(21)
