@@ -10,7 +10,7 @@
 //      - We may iterate though the map object using for...of which returns [key, value] for each iteration.
 //      - We may add to the map by passing other maps into the original map.
 //      - Map compares keys by identity and not equality so if we use an object or array as a key, it will be considered
-//          different from every other object and array, even those with exactly the same properies or elements.
+//          different from every other object and array, even those with exactly the same properties or elements.
 //      - the spread operator will give us an array of an array.
 
 // Unique feature: if we use .forEach, the value parameter comes before the key parameter like below:
@@ -47,7 +47,7 @@ x.delete("Mindy")
 
 let z = new Map(y);
 console.log('Map of z', z);
-console.log(x)                               // Map(4) { 'Lynn' => 'math', 'Prissy' => 'art', 'Shawn' => 'computer  'Shirley' => 'speech' }
+console.log(x)                      // Map(4) { 'Lynn' => 'math', 'Prissy' => 'art', 'Shawn' => 'computer  'Shirley' => 'speech' }
 //  const z = [...x]                // [[ 'Lynn', 'math' ], [ 'Prissy', 'art' ], [ 'Shawn', 'computer' ], [ 'Shirley', 'speech' ]]
 
 // [...x.keys()];     // [ 'Lynn', 'Prissy', 'Shawn', 'Shirley' ]
