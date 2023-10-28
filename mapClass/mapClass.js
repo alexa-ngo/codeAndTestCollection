@@ -7,10 +7,10 @@
 //      - Map object represents a set of values known as keys, where each key has another value associated with (or "mapped to") it.
 //      - A key may only occur once.
 //      - Both objects or primitive values may be used as either a key or a value.
-//      - We may iterate though the map object using for...of which reutnrs [key, value] for each iteration.
-//      - We may pass other maps into the map, which adds to the original map.
+//      - We may iterate though the map object using for...of which returns [key, value] for each iteration.
+//      - We may add to the map by passing other maps into the original map.
 //      - Map compares keys by identity and not equality so if we use an object or array as a key, it will be considered
-//          different from every other object and array, even those with exaxtly the same properies or elements.
+//          different from every other object and array, even those with exactly the same properies or elements.
 //      - the spread operator will give us an array of an array.
 
 // Unique feature: if we use .forEach, the value parameter comes before the key parameter like below:
