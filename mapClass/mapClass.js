@@ -8,7 +8,7 @@
 //      - A key may only occur once.
 //      - Both objects or primitive values may be used as either a key or a value.
 //      - We may iterate though the map object using for...of which reutnrs [key, value] for each iteration.
-//      - We may pass other maps into the map
+//      - We may pass other maps into the map, which adds to the original map.
 //      - Map compares keys by identity and not equality so if we use an object or array as a key, it will be considered
 //          different from every other object and array, even those with exaxtly the same properies or elements.
 //      - the spread operator will give us an array of an array.
@@ -25,6 +25,7 @@
 
 
 let x = new Map();
+
 x.size                          // 0
 x.set("Lynn", "math");
 x.set("Prissy", "art");
@@ -32,16 +33,26 @@ x.set("Mindy", "exercise");
 x.set("Shawn", "computer");
 x.set("Shirley", "speech");     // Map(5) { 'Lynn' => 'math', 'Prissy' => 'art', 'Mindy' => 'exercise', 'Shawn' => 'computer', 'Shirley' => 'speech' }
 x.get("Shirley")                // "speech"
+
+let y = new Map(x);
+y.set("dog", "USA");
+y.set("cat", "Europe");
+y.set("unicorn", "Asia");
+
 x.size                          // 5
 x.has("math");                  // false
 x.has("Shawn");                 // true
 x.delete("Mindy")
-x                               // Map(4) { 'Lynn' => 'math', 'Prissy' => 'art', 'Shawn' => 'computer  'Shirley' => 'speech' }
-const z = [...x]                // [[ 'Lynn', 'math' ], [ 'Prissy', 'art' ], [ 'Shawn', 'computer' ], [ 'Shirley', 'speech' ]]
 
-[...x.keys()];     // [ 'Lynn', 'Prissy', 'Shawn', 'Shirley' ]
-[...x.values()];    // [ 'math', 'art', 'computer', 'speech' ]
-[...x.entries()];   // [ [ 'Lynn', 'math' ], [ 'Prissy', 'art' ], [ 'Shawn', 'computer' ], [ 'Shirley', 'speech' ]]
+
+let z = new Map(y);
+console.log('Map of z', z);
+console.log(x)                               // Map(4) { 'Lynn' => 'math', 'Prissy' => 'art', 'Shawn' => 'computer  'Shirley' => 'speech' }
+//  const z = [...x]                // [[ 'Lynn', 'math' ], [ 'Prissy', 'art' ], [ 'Shawn', 'computer' ], [ 'Shirley', 'speech' ]]
+
+// [...x.keys()];     // [ 'Lynn', 'Prissy', 'Shawn', 'Shirley' ]
+// [...x.values()];    // [ 'math', 'art', 'computer', 'speech' ]
+// [...x.entries()];   // [ [ 'Lynn', 'math' ], [ 'Prissy', 'art' ], [ 'Shawn', 'computer' ], [ 'Shirley', 'speech' ]]
 
 
 for (let [key, value] of x) {
