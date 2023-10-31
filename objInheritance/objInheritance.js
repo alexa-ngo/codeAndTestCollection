@@ -21,11 +21,11 @@ class Car {
     constructor() {
         this.drive = sayHi();
     }
-}
+};
 
 function sayHi() {
     console.log(`Hi`);
-}
+};
 
 
 const carTest = new Car();
@@ -35,25 +35,25 @@ const carA = new Car();
 const carB = new Car();
 const carC = new Car();
 
-console.log('This is carA.x: ', carA.x); // Expect: 2
+console.log('This is carA.x expect 2: ', carA.x); // Expect: 2
 console.log('This is carB.x: ', carB.x); // Expect: 2
 console.log('This is carC.x: ', carC.x); // Expect: 2
 
 Car.prototype.x = 3;
 
-console.log('This is carA.x: ', carA.x); // Expect: 3
+console.log('This is carA.x expect 3: ', carA.x); // Expect: 3
 console.log('This is carB.x: ', carB.x); // Expect: 3
 console.log('This is carC.x: ', carC.x); // Expect: 3
 
-Car.x = 4;
+// Car.x = 4;
 
-console.log('This is carA.x: ', carA.x); // Expect: 3
-console.log('This is carB.x: ', carB.x); // Expect: 3
-console.log('This is carC.x: ', carC.x); // Expect: 3
+// console.log('This is carA.x: ', carA.x); // Expect: 3
+// console.log('This is carB.x: ', carB.x); // Expect: 3
+// console.log('This is carC.x: ', carC.x); // Expect: 3
 
 Car.prototype.x = 8;
 
-console.log('This is carA.x: ', carA.x); // Expect: 8
+console.log('This is carA.x expect 8: ', carA.x); // Expect: 8
 console.log('This is carB.x: ', carB.x); // Expect: 8
 console.log('This is carC.x: ', carC.x); // Expect: 8
 

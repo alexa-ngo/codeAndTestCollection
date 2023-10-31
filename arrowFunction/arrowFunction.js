@@ -26,14 +26,14 @@
 // Map: Using .map let's square some numbers.
 let squares = [2, 4, 6].map(x => x * x);        // squares == [ 4, 16, 36 ]
 
-// Filter: Using .filter let's only return the names
+// Filter: Using .filter let's only return the names.
 let filtered = [1, "Shawn", "Prissy", 6, 8, "Ann"].filter(x => typeof (x) === "string");       // fitlered == [ 'Shawn', 'Prissy', 'Ann' ]
 
-// Reduce
+// Reduce the array.
 const array = [3, 6, 7, 89, 1, 4, 41];
 const sum = array.reduce((a, b) => a + b);      // sum === 151
 
-// Which integer is smaller
+// Which integer is smaller?
 const theInteger = (input) => (input > 14 ? 14 : input);
 theInteger(21); // 14
 theInteger(3);  // 3

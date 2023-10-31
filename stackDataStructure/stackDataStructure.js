@@ -1,6 +1,6 @@
-// Stack Class
+// Stack Data Structure
 
-// Purpose: The Stack Class is based on an array data structure. The stack implements the concept of the "last in, first out" (LIFO) method. 
+// Purpose: The Stack class is based on an array data structure. The stack data structure implements the concept of the "last in, first out" (LIFO) method. 
 //          We would use the push() and pop() methods to add and remove elements from the top of the stack, respectively.
 //          This means if we want to get an element in the middle of the stack we have to use the pop() method
 //          to remove one element from the top of the stack one element at a time to reach the element we want before accessing it.

@@ -33,6 +33,7 @@ x.set("Mindy", "exercise");
 x.set("Shawn", "computer");
 x.set("Shirley", "speech");     // Map(5) { 'Lynn' => 'math', 'Prissy' => 'art', 'Mindy' => 'exercise', 'Shawn' => 'computer', 'Shirley' => 'speech' }
 x.get("Shirley")                // "speech"
+console.log('Here is bob', x.get("Bob"));
 
 let y = new Map(x);
 y.set("dog", "USA");
