@@ -6,8 +6,8 @@
 //          to remove all the elements on top of the element we want before accessing it.
 
 // Methods: 
-//      - The push() method appends one or more new elements to the top of the Stack and returns the new length of the Stack.
-//      - The pop() method pops off the last element of the stack, decrements the length, and returns the value that removes it.
+//      - The push() method adds one or more new elements to the top of the Stack and returns the new length of the Stack.
+//      - The pop() method removes the last element of the stack, decrements the length, and returns the value that removes it.
 //      - The top() method returns the value stored at the top of the stack.
 //      - The isEmpty() method returns a boolean.
 //      - The currIndex() method returns the position of the pointer.
