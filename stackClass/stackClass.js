@@ -1,9 +1,9 @@
 // Stack Class
 
 // Purpose: The Stack Class is based on an array data structure. The stack implements the concept of the "last in, first out" (LIFO) method. 
-//          We would use the push() and pop() methods to add and remove elements from the stack, respectively.
-//          We can only access the items on the top of the stack. This means if we want to get an element in the middle of the stack we have to use the pop() method
-//          to remove all the elements on top of the element we want before accessing it.
+//          We would use the push() and pop() methods to add and remove elements from the top of the stack, respectively.
+//          This means if we want to get an element in the middle of the stack we have to use the pop() method
+//          to remove one element from the top of the stack one element at a time to reach the element we want before accessing it.
 
 // Methods: 
 //      - The push() method adds one or more new elements to the top of the Stack and returns the new length of the Stack.
@@ -53,19 +53,19 @@ class Stack {
     }
 
     currIndex() {
-        return this.items.length;
+        return `The current index is ${this.items.length}.`;
     }
 };
 
-// theStack = new Stack();
-// theHolder = new Stack();
-// theStack.push(1);
-// theStack.push(2);
-// theStack.push(3);
-// theStack.push(4);
+theStack = new Stack();
+theHolder = new Stack();
+theStack.push(1);
+theStack.push(2);
+theStack.push(3);
+theStack.push(4);
 
-// const z = theStack;
-// console.log(z);
+const z = theStack.currIndex();
+console.log(z);
 
 // let array1 = [1, 2, 3];
 // let array2 = [4, 5, 6];
