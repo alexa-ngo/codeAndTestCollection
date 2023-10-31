@@ -9,19 +9,18 @@
 //      - The push() method adds one or more new elements to the top of the Stack and returns the new length of the Stack.
 //      - The pop() method removes the last element of the stack, decrements the length, and returns the value that removes it.
 //      - The top() method returns the value stored at the top of the stack.
-//      - The isEmpty() method returns a boolean.
+//      - The isEmpty() method returns a boolean and returns the number of items in the stack.
 //      - The currIndex() method returns the position of the pointer.
 
 // Preconditions: We can input an object or an integer into the stack.
-// Postconditions: returns the stack or the response to the method.
+// Postconditions: The program returns the array and response to the method.
 // Receives/inputs: We need to input an element for the push() method. The elements push(), pop(), top(), isEmpty(), and currIndex() does not need an argument.
-// Returns/outputs:
+// Returns/outputs: The array is returned. If the array doesn't have any elements, it returns an empty array.
 
 // Application: 
-//      - "most recently used" features such as files, items, tools, recently closed tabls
-//      - code editor to see if we have closed all our parentheses properly
-//      - undo/redo function and forward/back button
-
+//      - "most recently used" features such as files, items, tools, recently closed tabs.
+//      - code editor to see if we have closed all our parentheses properly.
+//      - undo/redo function and forward/back button.
 
 
 class Stack {
@@ -58,13 +57,12 @@ class Stack {
 };
 
 theStack = new Stack();
-theHolder = new Stack();
-theStack.push(1);
-theStack.push(2);
-theStack.push(3);
-theStack.push(4);
+// theStack.push(1);
+// theStack.push(2);
+// theStack.push(3);
+// theStack.push(4);
 
-const z = theStack.currIndex();
+const z = theStack;
 console.log(z);
 
 // let array1 = [1, 2, 3];
