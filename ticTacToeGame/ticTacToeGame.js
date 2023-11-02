@@ -10,7 +10,7 @@ console.log(`Welcome Player 1: ${p1name}! (X)`);
 console.log(`Welcome Player 2: ${p2name}! (O)`);
 
 
-const winningCombo = ["X", "X", "X"]
+const winningCombo1 = ["X", "X", "X"]
 let playingBoard = [["a", "b", "c"], ["d", "e", "f"], ["g", "h", "i"]];
 let turn = 1;
 
@@ -38,13 +38,17 @@ function createPlayers() {
             turn = 1;
         }
         console.log('playingboard after', playingBoard);
-
     }
 
-    if (playingBoard[0] === winningCombo) {
-        console.log(`${player1} is the winner!`)
+    if (JSON.stringify(playingBoard[0]) == JSON.stringify(winningCombo1)) {
+        console.log(`${player1} is the winner!`);
     }
-
+    if (JSON.stringify(playingBoard[1]) == JSON.stringify(winningCombo1)) {
+        console.log(`${player1} is the winner!`);
+    }
+    if (JSON.stringify(playingBoard[2]) == JSON.stringify(winningCombo1)) {
+        console.log(`${player1} is the winner!`);
+    }
 };
 
 console.log(createPlayers());
